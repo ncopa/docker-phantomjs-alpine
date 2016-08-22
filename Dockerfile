@@ -29,7 +29,7 @@ RUN apk add --no-cache --virtual .build-deps \
 	&& cd /usr/src \
 	&& git clone git://github.com/ariya/phantomjs.git \
 	&& cd phantomjs \
-	&& git checkout $PAHTOMJS_VERSION \
+	&& git checkout $PHANTOMJS_VERSION \
 	&& git submodule init \
 	&& git submodule update \
 	&& for i in qtbase qtwebkit; do \
